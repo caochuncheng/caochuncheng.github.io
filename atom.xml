@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Dev</title>
+  <title>E.Dev</title>
   
   <subtitle>简单，快乐，好运，一路追求</subtitle>
   <link href="/atom.xml" rel="self"/>
@@ -198,13 +198,13 @@
       <category term="ios" scheme="https://caochuncheng.github.io/categories/ios/"/>
     
     
+      <category term="ios" scheme="https://caochuncheng.github.io/tags/ios/"/>
+    
       <category term="png" scheme="https://caochuncheng.github.io/tags/png/"/>
     
       <category term="pngcrush" scheme="https://caochuncheng.github.io/tags/pngcrush/"/>
     
       <category term="pngquant" scheme="https://caochuncheng.github.io/tags/pngquant/"/>
-    
-      <category term="ios" scheme="https://caochuncheng.github.io/tags/ios/"/>
     
       <category term="mac" scheme="https://caochuncheng.github.io/tags/mac/"/>
     
