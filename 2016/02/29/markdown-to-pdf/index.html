@@ -3,19 +3,20 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Archives | Dev</title>
+  <title>markdown-to-pdf | Dev</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Erlang IOS Game Dev">
-<meta name="keywords" content="Erlang IOS">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Dev">
-<meta property="og:url" content="https://caochuncheng.github.io/archives/index.html">
+  <meta name="description" content="Markdown转换成PDF，基于OS X EI Capitan系统命令行操作。">
+<meta name="keywords" content="pandoc,mardown,pdf,BasicTeX">
+<meta property="og:type" content="article">
+<meta property="og:title" content="markdown-to-pdf">
+<meta property="og:url" content="https://caochuncheng.github.io/2016/02/29/markdown-to-pdf/index.html">
 <meta property="og:site_name" content="Dev">
-<meta property="og:description" content="Erlang IOS Game Dev">
+<meta property="og:description" content="Markdown转换成PDF，基于OS X EI Capitan系统命令行操作。">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2016-04-02T04:23:48.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Dev">
-<meta name="twitter:description" content="Erlang IOS Game Dev">
+<meta name="twitter:title" content="markdown-to-pdf">
+<meta name="twitter:description" content="Markdown转换成PDF，基于OS X EI Capitan系统命令行操作。">
   
     <link rel="alternate" href="/atom.xml" title="Dev" type="application/atom+xml">
   
@@ -54,7 +55,7 @@
           <li><a class=""
                  href="/index.html">Home</a></li>
         
-          <li><a class="active"
+          <li><a class=""
                  href="/archives/">Archives</a></li>
         
           <li><a class=""
@@ -83,210 +84,104 @@
 
     <div class="row">
         <div class="col-sm-8 blog-main">
-          
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <header class="archive-article-header">
+          <article id="post-markdown-to-pdf" class="article article-type-post" itemscope itemprop="blogPost">
+
+  <header class="article-header">
     
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/05/09/hello-world/">Hello World</a>
+    <h1 class="article-title" itemprop="name">
+      markdown-to-pdf
     </h1>
   
 
 
+  </header>
+
+  <div class="article-meta">
     <div class="article-datetime">
-  <a href="/2018/05/09/hello-world/" class="archive-article-date"><time datetime="2018-05-09T11:20:15.012Z" itemprop="datePublished">五月 9日</time></a>
+  <a href="/2016/02/29/markdown-to-pdf/" class="article-date"><time datetime="2016-02-29T08:22:09.000Z" itemprop="datePublished">2016-02-29</time></a>
 </div>
 
-  </header>
+    
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/other/">other</a>
+  </div>
+
+
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Markdown转换成PDF，基于OS X EI Capitan系统命令行操作。</p>
+<a id="more"></a>
+<h2 id="安装相关程序"><a href="#安装相关程序" class="headerlink" title="安装相关程序"></a>安装相关程序</h2><p>1.安装<a href="http://pandoc.org/installing.html" target="_blank" rel="noopener">Pandoc</a>，下载安装包<a href="https://github.com/jgm/pandoc/releases/download/1.16.0.2/pandoc-1.16.0.2-osx.pkg" target="_blank" rel="noopener">pandoc-1.16.0.2-osx.pkg</a>，下载完成直接通过pkg包安装。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">which</span> pandoc</span><br><span class="line">/usr/<span class="built_in">local</span>/bin/pandoc</span><br></pre></td></tr></table></figure>
+<p>2.安装<a href="http://www.tug.org/mactex/morepackages.html" target="_blank" rel="noopener">BasicTeX</a>，下载<a href="http://tug.org/cgi-bin/mactex-download/BasicTeX.pkg" target="_blank" rel="noopener">BasicTeX.pkg</a>，下载完成直接通过pkg包安装</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">## 将以下目录添加到PATH路径中</span></span><br><span class="line">PATH=/usr/<span class="built_in">local</span>/texlive/2015basic/bin/universal-darwin:<span class="variable">$&#123;PATH&#125;</span></span><br><span class="line"><span class="built_in">which</span> tlmgr</span><br><span class="line">/usr/<span class="built_in">local</span>/texlive/2015basic/bin/universal-darwin/tlmgr</span><br></pre></td></tr></table></figure>
+<p>安装必须的组件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo tlmgr install collection-fontsrecommended</span><br></pre></td></tr></table></figure>
+<p>此命令有可能会提示更新操作</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">===============================================================================</span><br><span class="line">tlmgr itself needs to be updated.</span><br><span class="line">Please <span class="keyword">do</span> this via either</span><br><span class="line">  tlmgr update --self</span><br><span class="line">or by getting the latest updater <span class="keyword">for</span> Unix-ish systems:</span><br><span class="line">  http://mirror.ctan.org/systems/texlive/tlnet/update-tlmgr-latest.sh</span><br><span class="line">and/or Windows systems:</span><br><span class="line">  http://mirror.ctan.org/systems/texlive/tlnet/update-tlmgr-latest.exe</span><br><span class="line">Then <span class="built_in">continue</span> with other updates as usual.</span><br><span class="line">===============================================================================</span><br></pre></td></tr></table></figure>
+<p>执行以下操作即可</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo tlmgr update --self</span><br></pre></td></tr></table></figure>
+<p>以上操作之后软件安装完成，可以使用pandoc和basicTeX操作各种文档的转换</p>
+<h2 id="小例子"><a href="#小例子" class="headerlink" title="小例子"></a>小例子</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pandoc xxx.md -s -o xxx.pdf --latex-engine=xelatex --template=/path/to/default \</span><br><span class="line">-V paper=a4paper -V fontsize=20pt -V mainfont=<span class="string">"STHeitiSC-Light"</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>latex-engine 指定使用的latex引擎</li>
+<li>mainfont 指定使用的字体，没这个指定操作不能正常的转换中文</li>
+<li>STHeitiSC-Light 字体名称，根据操作系统的字体册app查询，即可以使用<ul>
+<li>“字体册”位于“应用程序”文件夹中（在 Finder 中选取“前往”&gt;“应用程序”）</li>
+</ul>
+</li>
+</ul>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="http://afoo.me/posts/2013-07-10-how-to-transform-chinese-pdf-with-pandoc.html" target="_blank" rel="noopener">pandoc中文pdf转换攻略</a></p>
+<p>祝：开心、简单！</p>
+
+      
+    </div>
+
+    
+      
+
+    
+
+    <footer class="article-footer">
+      <a data-url="https://caochuncheng.github.io/2016/02/29/markdown-to-pdf/" data-id="cjh36j9zw0009ijdwg8jp01hc" class="article-share-link">
+        <i class="fa fa-share"></i> Share
+      </a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/BasicTeX/">BasicTeX</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mardown/">mardown</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/pandoc/">pandoc</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/pdf/">pdf</a></li></ul>
+
+
+    </footer>
+  </div>
+  
+    
+<ul id="article-nav" class="nav nav-pills nav-justified">
+  
+  <li role="presentation">
+    <a href="/2015/08/25/Erlang-Centos66-Install/" id="article-nav-older" class="article-nav-link-wrap">
+      <i class="fa fa-chevron-left pull-left"></i>
+      <span class="article-nav-link-title">Erlang-Centos6.6-Install</span>
+    </a>
+  </li>
+  
+  
+  <li role="presentation">
+    <a href="/2018/05/09/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+      <span class="article-nav-link-title">Hello World</span>
+      <i class="fa fa-chevron-right pull-right"></i>
+    </a>
+  </li>
+  
+</ul>
+
+
+  
 </article>
-
-  
-    
-    
-      
-        </div></section>
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <header class="archive-article-header">
-    
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/02/29/markdown-to-pdf/">markdown-to-pdf</a>
-    </h1>
-  
-
-
-    <div class="article-datetime">
-  <a href="/2016/02/29/markdown-to-pdf/" class="archive-article-date"><time datetime="2016-02-29T08:22:09.000Z" itemprop="datePublished">二月 29日</time></a>
-</div>
-
-  </header>
-</article>
-
-  
-    
-    
-      
-        </div></section>
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2015" class="archive-year">2015</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <header class="archive-article-header">
-    
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/08/25/Erlang-Centos66-Install/">Erlang-Centos6.6-Install</a>
-    </h1>
-  
-
-
-    <div class="article-datetime">
-  <a href="/2015/08/25/Erlang-Centos66-Install/" class="archive-article-date"><time datetime="2015-08-25T03:49:13.000Z" itemprop="datePublished">八月 25日</time></a>
-</div>
-
-  </header>
-</article>
-
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <header class="archive-article-header">
-    
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/05/29/iOS-扫描二维码条形码/">iOS-扫描二维码/条形码</a>
-    </h1>
-  
-
-
-    <div class="article-datetime">
-  <a href="/2015/05/29/iOS-扫描二维码条形码/" class="archive-article-date"><time datetime="2015-05-29T03:11:51.000Z" itemprop="datePublished">五月 29日</time></a>
-</div>
-
-  </header>
-</article>
-
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <header class="archive-article-header">
-    
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/04/07/youtube-视频下载/">youtube-视频下载</a>
-    </h1>
-  
-
-
-    <div class="article-datetime">
-  <a href="/2015/04/07/youtube-视频下载/" class="archive-article-date"><time datetime="2015-04-07T08:21:35.000Z" itemprop="datePublished">四月 7日</time></a>
-</div>
-
-  </header>
-</article>
-
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <header class="archive-article-header">
-    
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/02/15/iOS-Simulator-Screen-Shot-Sort/">iOS-Simulator-Screen-Shot-Sort</a>
-    </h1>
-  
-
-
-    <div class="article-datetime">
-  <a href="/2015/02/15/iOS-Simulator-Screen-Shot-Sort/" class="archive-article-date"><time datetime="2015-02-15T08:30:00.000Z" itemprop="datePublished">二月 15日</time></a>
-</div>
-
-  </header>
-</article>
-
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <header class="archive-article-header">
-    
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/01/19/IOS-APP-ICON-生成/">IOS APP ICON 生成</a>
-    </h1>
-  
-
-
-    <div class="article-datetime">
-  <a href="/2015/01/19/IOS-APP-ICON-生成/" class="archive-article-date"><time datetime="2015-01-19T03:58:05.000Z" itemprop="datePublished">一月 19日</time></a>
-</div>
-
-  </header>
-</article>
-
-  
-    
-    
-      
-        </div></section>
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2014" class="archive-year">2014</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <header class="archive-article-header">
-    
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2014/09/07/PNG-压缩和优化/">PNG 压缩和优化</a>
-    </h1>
-  
-
-
-    <div class="article-datetime">
-  <a href="/2014/09/07/PNG-压缩和优化/" class="archive-article-date"><time datetime="2014-09-07T06:35:33.000Z" itemprop="datePublished">九月 7日</time></a>
-</div>
-
-  </header>
-</article>
-
-  
-  
-    </div></section>
-  
 
 
 

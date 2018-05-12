@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://caochuncheng.github.io/"/>
-  <updated>2018-05-12T08:19:27.557Z</updated>
+  <updated>2018-05-12T08:40:17.942Z</updated>
   <id>https://caochuncheng.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://caochuncheng.github.io/2018/05/09/hello-world/"/>
     <id>https://caochuncheng.github.io/2018/05/09/hello-world/</id>
     <published>2018-05-09T11:20:15.012Z</published>
-    <updated>2018-05-12T08:19:27.557Z</updated>
+    <updated>2018-05-12T08:40:17.942Z</updated>
     
     <summary type="html">
     
@@ -29,6 +29,184 @@
     
     </summary>
     
+    
+  </entry>
+  
+  <entry>
+    <title>markdown-to-pdf</title>
+    <link href="https://caochuncheng.github.io/2016/02/29/markdown-to-pdf/"/>
+    <id>https://caochuncheng.github.io/2016/02/29/markdown-to-pdf/</id>
+    <published>2016-02-29T08:22:09.000Z</published>
+    <updated>2016-04-02T04:23:48.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Markdown转换成PDF，基于OS X EI Capitan系统命令行操作。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="other" scheme="https://caochuncheng.github.io/categories/other/"/>
+    
+    
+      <category term="pandoc" scheme="https://caochuncheng.github.io/tags/pandoc/"/>
+    
+      <category term="mardown" scheme="https://caochuncheng.github.io/tags/mardown/"/>
+    
+      <category term="pdf" scheme="https://caochuncheng.github.io/tags/pdf/"/>
+    
+      <category term="BasicTeX" scheme="https://caochuncheng.github.io/tags/BasicTeX/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Erlang-Centos6.6-Install</title>
+    <link href="https://caochuncheng.github.io/2015/08/25/Erlang-Centos66-Install/"/>
+    <id>https://caochuncheng.github.io/2015/08/25/Erlang-Centos66-Install/</id>
+    <published>2015-08-25T03:49:13.000Z</published>
+    <updated>2015-08-25T04:05:06.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在centos6.6系统上安装erlang R17.5操作小记录。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="erlang" scheme="https://caochuncheng.github.io/categories/erlang/"/>
+    
+    
+      <category term="erlang" scheme="https://caochuncheng.github.io/tags/erlang/"/>
+    
+      <category term="centos6.6" scheme="https://caochuncheng.github.io/tags/centos6-6/"/>
+    
+      <category term="install" scheme="https://caochuncheng.github.io/tags/install/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>iOS-扫描二维码/条形码</title>
+    <link href="https://caochuncheng.github.io/2015/05/29/iOS-%E6%89%AB%E6%8F%8F%E4%BA%8C%E7%BB%B4%E7%A0%81%E6%9D%A1%E5%BD%A2%E7%A0%81/"/>
+    <id>https://caochuncheng.github.io/2015/05/29/iOS-扫描二维码条形码/</id>
+    <published>2015-05-29T03:11:51.000Z</published>
+    <updated>2015-05-29T03:21:42.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;扫描二维码/条形码功能demo演示，本项目提供使用iOS SDK (7以上)的版本自带的AVFoundation框架实现扫码功能，同时演示使用&lt;a href=&quot;https://github.com/bmorton/ZBarSDK&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;ZBarSDK&lt;/a&gt;扫码库的示例。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="ios" scheme="https://caochuncheng.github.io/categories/ios/"/>
+    
+    
+      <category term="ios" scheme="https://caochuncheng.github.io/tags/ios/"/>
+    
+      <category term="bar code reader" scheme="https://caochuncheng.github.io/tags/bar-code-reader/"/>
+    
+      <category term="ZBarSDK" scheme="https://caochuncheng.github.io/tags/ZBarSDK/"/>
+    
+      <category term="AVFoundation" scheme="https://caochuncheng.github.io/tags/AVFoundation/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>youtube-视频下载</title>
+    <link href="https://caochuncheng.github.io/2015/04/07/youtube-%E8%A7%86%E9%A2%91%E4%B8%8B%E8%BD%BD/"/>
+    <id>https://caochuncheng.github.io/2015/04/07/youtube-视频下载/</id>
+    <published>2015-04-07T08:21:35.000Z</published>
+    <updated>2015-04-07T09:09:41.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;下载&lt;a href=&quot;https://www.youtube.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;youtube视频&lt;/a&gt;的方式小结，其中包括下载视频的解说词，一般针对国外公开课视频的下载，在听课的过程中可以自动的对应相应的字幕，方便学习，提高学习效率。本文使用的下载方式比较原始，对于批量下载不太方便，仅供参考、参照。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="other" scheme="https://caochuncheng.github.io/categories/other/"/>
+    
+    
+      <category term="youtube" scheme="https://caochuncheng.github.io/tags/youtube/"/>
+    
+      <category term="解说词" scheme="https://caochuncheng.github.io/tags/%E8%A7%A3%E8%AF%B4%E8%AF%8D/"/>
+    
+      <category term="视频下载" scheme="https://caochuncheng.github.io/tags/%E8%A7%86%E9%A2%91%E4%B8%8B%E8%BD%BD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>iOS-Simulator-Screen-Shot-Sort</title>
+    <link href="https://caochuncheng.github.io/2015/02/15/iOS-Simulator-Screen-Shot-Sort/"/>
+    <id>https://caochuncheng.github.io/2015/02/15/iOS-Simulator-Screen-Shot-Sort/</id>
+    <published>2015-02-15T08:30:00.000Z</published>
+    <updated>2015-02-15T08:51:07.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;将iOS Simulator模拟器APP应用截图分类归类处理方便应用提交使用，APP截图分类有5种:iPad、3.5-Inch、4-Inch、4.7-Inch、5.5-Inch。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="ios" scheme="https://caochuncheng.github.io/categories/ios/"/>
+    
+    
+      <category term="ios" scheme="https://caochuncheng.github.io/tags/ios/"/>
+    
+      <category term="ImageMagick" scheme="https://caochuncheng.github.io/tags/ImageMagick/"/>
+    
+      <category term="iOSSimulator" scheme="https://caochuncheng.github.io/tags/iOSSimulator/"/>
+    
+      <category term="ScreenShot" scheme="https://caochuncheng.github.io/tags/ScreenShot/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>IOS APP ICON 生成</title>
+    <link href="https://caochuncheng.github.io/2015/01/19/IOS-APP-ICON-%E7%94%9F%E6%88%90/"/>
+    <id>https://caochuncheng.github.io/2015/01/19/IOS-APP-ICON-生成/</id>
+    <published>2015-01-19T03:58:05.000Z</published>
+    <updated>2015-01-19T06:04:09.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;根据1024x1024大小的icon图片，自动生成IOS APP ICON各种规格的图片和对应的配置文件(Contents.json)，支持最新的IOS 8所有设备应用。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="ios" scheme="https://caochuncheng.github.io/categories/ios/"/>
+    
+    
+      <category term="ios" scheme="https://caochuncheng.github.io/tags/ios/"/>
+    
+      <category term="icon" scheme="https://caochuncheng.github.io/tags/icon/"/>
+    
+      <category term="ImageMagick" scheme="https://caochuncheng.github.io/tags/ImageMagick/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PNG 压缩和优化</title>
+    <link href="https://caochuncheng.github.io/2014/09/07/PNG-%E5%8E%8B%E7%BC%A9%E5%92%8C%E4%BC%98%E5%8C%96/"/>
+    <id>https://caochuncheng.github.io/2014/09/07/PNG-压缩和优化/</id>
+    <published>2014-09-07T06:35:33.000Z</published>
+    <updated>2015-01-19T04:12:57.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;PNG图片有损压缩，无损压缩优化，使用程序加载分析PNG图片，更快速和更节省，提供脚本批量处理文件。提供简单的参数区别处理PNG图片，即是否启用IE6-friendly。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="ios" scheme="https://caochuncheng.github.io/categories/ios/"/>
+    
+    
+      <category term="png" scheme="https://caochuncheng.github.io/tags/png/"/>
+    
+      <category term="pngcrush" scheme="https://caochuncheng.github.io/tags/pngcrush/"/>
+    
+      <category term="pngquant" scheme="https://caochuncheng.github.io/tags/pngquant/"/>
+    
+      <category term="ios" scheme="https://caochuncheng.github.io/tags/ios/"/>
+    
+      <category term="mac" scheme="https://caochuncheng.github.io/tags/mac/"/>
     
   </entry>
   

@@ -3,19 +3,26 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Archives | Dev</title>
+  <title>youtube-视频下载 | Dev</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Erlang IOS Game Dev">
-<meta name="keywords" content="Erlang IOS">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Dev">
-<meta property="og:url" content="https://caochuncheng.github.io/archives/index.html">
+  <meta name="description" content="下载youtube视频的方式小结，其中包括下载视频的解说词，一般针对国外公开课视频的下载，在听课的过程中可以自动的对应相应的字幕，方便学习，提高学习效率。本文使用的下载方式比较原始，对于批量下载不太方便，仅供参考、参照。">
+<meta name="keywords" content="youtube,解说词,视频下载">
+<meta property="og:type" content="article">
+<meta property="og:title" content="youtube-视频下载">
+<meta property="og:url" content="https://caochuncheng.github.io/2015/04/07/youtube-视频下载/index.html">
 <meta property="og:site_name" content="Dev">
-<meta property="og:description" content="Erlang IOS Game Dev">
+<meta property="og:description" content="下载youtube视频的方式小结，其中包括下载视频的解说词，一般针对国外公开课视频的下载，在听课的过程中可以自动的对应相应的字幕，方便学习，提高学习效率。本文使用的下载方式比较原始，对于批量下载不太方便，仅供参考、参照。">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://caochuncheng.github.io/images/1.jpg">
+<meta property="og:image" content="https://caochuncheng.github.io/images/2.jpg">
+<meta property="og:image" content="https://caochuncheng.github.io/images/3.jpg">
+<meta property="og:image" content="https://caochuncheng.github.io/images/4.jpg">
+<meta property="og:image" content="https://caochuncheng.github.io/images/5.jpg">
+<meta property="og:updated_time" content="2015-04-07T09:09:41.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Dev">
-<meta name="twitter:description" content="Erlang IOS Game Dev">
+<meta name="twitter:title" content="youtube-视频下载">
+<meta name="twitter:description" content="下载youtube视频的方式小结，其中包括下载视频的解说词，一般针对国外公开课视频的下载，在听课的过程中可以自动的对应相应的字幕，方便学习，提高学习效率。本文使用的下载方式比较原始，对于批量下载不太方便，仅供参考、参照。">
+<meta name="twitter:image" content="https://caochuncheng.github.io/images/1.jpg">
   
     <link rel="alternate" href="/atom.xml" title="Dev" type="application/atom+xml">
   
@@ -54,7 +61,7 @@
           <li><a class=""
                  href="/index.html">Home</a></li>
         
-          <li><a class="active"
+          <li><a class=""
                  href="/archives/">Archives</a></li>
         
           <li><a class=""
@@ -83,210 +90,88 @@
 
     <div class="row">
         <div class="col-sm-8 blog-main">
-          
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <header class="archive-article-header">
+          <article id="post-youtube-视频下载" class="article article-type-post" itemscope itemprop="blogPost">
+
+  <header class="article-header">
     
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/05/09/hello-world/">Hello World</a>
+    <h1 class="article-title" itemprop="name">
+      youtube-视频下载
     </h1>
   
 
 
+  </header>
+
+  <div class="article-meta">
     <div class="article-datetime">
-  <a href="/2018/05/09/hello-world/" class="archive-article-date"><time datetime="2018-05-09T11:20:15.012Z" itemprop="datePublished">五月 9日</time></a>
+  <a href="/2015/04/07/youtube-视频下载/" class="article-date"><time datetime="2015-04-07T08:21:35.000Z" itemprop="datePublished">2015-04-07</time></a>
 </div>
 
-  </header>
+    
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/other/">other</a>
+  </div>
+
+
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>下载<a href="https://www.youtube.com/" target="_blank" rel="noopener">youtube视频</a>的方式小结，其中包括下载视频的解说词，一般针对国外公开课视频的下载，在听课的过程中可以自动的对应相应的字幕，方便学习，提高学习效率。本文使用的下载方式比较原始，对于批量下载不太方便，仅供参考、参照。</p>
+<a id="more"></a>
+<h2 id="关于"><a href="#关于" class="headerlink" title="关于"></a>关于</h2><p>基本mac OSX 10.9.4 系统上书写，并测试，不同系统环境请相应转转换</p>
+<h2 id="下载视频"><a href="#下载视频" class="headerlink" title="下载视频"></a>下载视频</h2><p>1.在Google Chrome浏览器打开Youtube视频，通过浏览器地址栏复制获取要下载的视频的URL<br> <img src="../../../../images/1.jpg" alt="打开视频"><br>2.使用Google Chrome浏览器打开一个新的标签页，并访问<a href="http://en.savefrom.net/?rmode=false" target="_blank" rel="noopener">en.savefrom.net</a>站点，把要下载的视频的URL输入，并点击【Download】按钮，如下图所示：<br> <img src="../../../../images/2.jpg" alt="下载视频"><br>3.即可以选择你所需要的视频格式直行下载</p>
+<h2 id="下载解说词"><a href="#下载解说词" class="headerlink" title="下载解说词"></a>下载解说词</h2><p>1.在Google Chrome浏览器打开Youtube视频，这里可以点击不要播放视频<br>2.使用Google Chrome打开开发者工具，并切换到console页面，运行以下的JavaScript脚本代码即可以根据需要下载此视频相应的解说词<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 下载此视频[youtube]的中文解说词 xml文件</span></span><br><span class="line"><span class="comment">// lang=zh-CN 通过修改此处可以下载相应语言的解说词</span></span><br><span class="line"><span class="comment">// 按回车即执行此脚本</span></span><br><span class="line"><span class="keyword">var</span> tts_url = yt.getConfig(<span class="string">"TTS_URL"</span>); <span class="comment">//"TTS_URL"这个标记名称一般不会改变</span></span><br><span class="line"><span class="keyword">var</span> xml_url = tts_url + <span class="string">"&amp;type=track"</span> + <span class="string">"&amp;lang=zh-CN"</span> + <span class="string">"&amp;name"</span> + <span class="string">"&amp;kind="</span></span><br><span class="line"><span class="keyword">var</span> a = <span class="built_in">document</span>.createElement(<span class="string">'a'</span>);</span><br><span class="line">a.href = xml_url;</span><br><span class="line">a.download = <span class="string">'xxxxx.xml'</span>;</span><br><span class="line">a.click();</span><br></pre></td></tr></table></figure></p>
+<p>3.具体可以参照下图:<br> <img src="../../../../images/3.jpg" alt="打开执行脚本窗口"><br>4.执行并弹窗提示下载<br> <img src="../../../../images/4.jpg" alt="下载解说词"></p>
+<h2 id="解说词格式转换"><a href="#解说词格式转换" class="headerlink" title="解说词格式转换"></a>解说词格式转换</h2><p>1.下载<a href="http://sourceforge.net/projects/google2srt/files/Google2SRT/" target="_blank" rel="noopener">Google2SRT</a>字幕转换工具<br>2.相关操作提示如下图所示：<br> <img src="../../../../images/5.jpg" alt="Google2SRT"></p>
+<p>祝：开心、简单！</p>
+
+      
+    </div>
+
+    
+      
+
+    
+
+    <footer class="article-footer">
+      <a data-url="https://caochuncheng.github.io/2015/04/07/youtube-视频下载/" data-id="cjh36ja0n001sijdwjwv0j5s6" class="article-share-link">
+        <i class="fa fa-share"></i> Share
+      </a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/youtube/">youtube</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/视频下载/">视频下载</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/解说词/">解说词</a></li></ul>
+
+
+    </footer>
+  </div>
+  
+    
+<ul id="article-nav" class="nav nav-pills nav-justified">
+  
+  <li role="presentation">
+    <a href="/2015/02/15/iOS-Simulator-Screen-Shot-Sort/" id="article-nav-older" class="article-nav-link-wrap">
+      <i class="fa fa-chevron-left pull-left"></i>
+      <span class="article-nav-link-title">iOS-Simulator-Screen-Shot-Sort</span>
+    </a>
+  </li>
+  
+  
+  <li role="presentation">
+    <a href="/2015/05/29/iOS-扫描二维码条形码/" id="article-nav-newer" class="article-nav-link-wrap">
+      <span class="article-nav-link-title">iOS-扫描二维码/条形码</span>
+      <i class="fa fa-chevron-right pull-right"></i>
+    </a>
+  </li>
+  
+</ul>
+
+
+  
 </article>
-
-  
-    
-    
-      
-        </div></section>
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <header class="archive-article-header">
-    
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/02/29/markdown-to-pdf/">markdown-to-pdf</a>
-    </h1>
-  
-
-
-    <div class="article-datetime">
-  <a href="/2016/02/29/markdown-to-pdf/" class="archive-article-date"><time datetime="2016-02-29T08:22:09.000Z" itemprop="datePublished">二月 29日</time></a>
-</div>
-
-  </header>
-</article>
-
-  
-    
-    
-      
-        </div></section>
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2015" class="archive-year">2015</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <header class="archive-article-header">
-    
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/08/25/Erlang-Centos66-Install/">Erlang-Centos6.6-Install</a>
-    </h1>
-  
-
-
-    <div class="article-datetime">
-  <a href="/2015/08/25/Erlang-Centos66-Install/" class="archive-article-date"><time datetime="2015-08-25T03:49:13.000Z" itemprop="datePublished">八月 25日</time></a>
-</div>
-
-  </header>
-</article>
-
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <header class="archive-article-header">
-    
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/05/29/iOS-扫描二维码条形码/">iOS-扫描二维码/条形码</a>
-    </h1>
-  
-
-
-    <div class="article-datetime">
-  <a href="/2015/05/29/iOS-扫描二维码条形码/" class="archive-article-date"><time datetime="2015-05-29T03:11:51.000Z" itemprop="datePublished">五月 29日</time></a>
-</div>
-
-  </header>
-</article>
-
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <header class="archive-article-header">
-    
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/04/07/youtube-视频下载/">youtube-视频下载</a>
-    </h1>
-  
-
-
-    <div class="article-datetime">
-  <a href="/2015/04/07/youtube-视频下载/" class="archive-article-date"><time datetime="2015-04-07T08:21:35.000Z" itemprop="datePublished">四月 7日</time></a>
-</div>
-
-  </header>
-</article>
-
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <header class="archive-article-header">
-    
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/02/15/iOS-Simulator-Screen-Shot-Sort/">iOS-Simulator-Screen-Shot-Sort</a>
-    </h1>
-  
-
-
-    <div class="article-datetime">
-  <a href="/2015/02/15/iOS-Simulator-Screen-Shot-Sort/" class="archive-article-date"><time datetime="2015-02-15T08:30:00.000Z" itemprop="datePublished">二月 15日</time></a>
-</div>
-
-  </header>
-</article>
-
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <header class="archive-article-header">
-    
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/01/19/IOS-APP-ICON-生成/">IOS APP ICON 生成</a>
-    </h1>
-  
-
-
-    <div class="article-datetime">
-  <a href="/2015/01/19/IOS-APP-ICON-生成/" class="archive-article-date"><time datetime="2015-01-19T03:58:05.000Z" itemprop="datePublished">一月 19日</time></a>
-</div>
-
-  </header>
-</article>
-
-  
-    
-    
-      
-        </div></section>
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2014" class="archive-year">2014</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <header class="archive-article-header">
-    
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2014/09/07/PNG-压缩和优化/">PNG 压缩和优化</a>
-    </h1>
-  
-
-
-    <div class="article-datetime">
-  <a href="/2014/09/07/PNG-压缩和优化/" class="archive-article-date"><time datetime="2014-09-07T06:35:33.000Z" itemprop="datePublished">九月 7日</time></a>
-</div>
-
-  </header>
-</article>
-
-  
-  
-    </div></section>
-  
 
 
 
